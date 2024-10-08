@@ -9,7 +9,7 @@ form.addEventListener("submit", async (event) => {
   city = data.value;
   if (city.length >= 3 && city !== "") {
     try {
-      let res = await axios.get(`http://localhost:3000/weather?city=${city}`);
+      let res = await axios.get(`/weather?city=${city}`);
       if (res.cod == "500") {
         console.log("City not found:", res.message); // Error case
         alert("Error: " + res.message); // Show an alert to the user

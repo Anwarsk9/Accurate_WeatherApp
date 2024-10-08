@@ -49,9 +49,9 @@ button#submit {
   background-color: rgb(190, 221, 227);
   cursor: pointer;
 }
-/* .fa-main {
+.fa-main {
   visibility: hidden;
-} */
+}
 .timer {
   margin-left: 110px;
   width: 40%;
