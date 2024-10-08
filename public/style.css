@@ -49,13 +49,14 @@ button#submit {
   background-color: rgb(190, 221, 227);
   cursor: pointer;
 }
-.fa-main {
+/* .fa-main {
   visibility: hidden;
-}
+} */
 .timer {
-  width: 70%;
+  margin-left: 110px;
+  width: 40%;
   color: #fff;
-  text-align: center;
+  text-align: start;
 }
 .timer h2 {
   margin-right: 85px;
@@ -79,9 +80,9 @@ i#icon {
 
 #temp {
   width: 70%;
-  text-align: center;
   color: #fff;
-  text-align: center;
+  text-align: start;
+  margin-left: 110px;
 }
 #temp h1 {
   margin-bottom: 0;
@@ -89,8 +90,8 @@ i#icon {
 }
 #temp p {
   margin-top: 0;
-  padding-right: 50px;
   font-size: large;
+  margin-left: 10px;
 }
 
 .details {
