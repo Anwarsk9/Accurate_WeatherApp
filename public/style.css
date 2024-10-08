@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container {
+  width: 500px;
+  height: fit-content;
+  color: #fff;
+  background: linear-gradient(50deg, #0061ff, #60efff);
+  border-radius: 10px;
+}
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+label[for="search"] {
+  display: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+input#search {
+  height: 2.5rem;
+  width: 13.5rem;
+  border-radius: 5px;
+  background-color: rgb(190, 221, 227);
+  text-align: center;
+  font-size: large;
+  padding-left: 15px;
+  outline-color: aqua;
+  border: #3e8890;
+}
+button#submit {
+  height: 2.5rem;
+  width: 5rem;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5rem;
+  color: rgb(28, 28, 28);
+  font-weight: 600;
+  background-color: rgb(190, 221, 227);
+  cursor: pointer;
+}
+.fa-main {
+  visibility: hidden;
+}
+.timer {
+  width: 70%;
+  color: #fff;
+  text-align: center;
+}
+.timer h2 {
+  margin-right: 85px;
+  margin-bottom: -10px;
+}
+.timer p {
+  padding-right: 10px;
+}
+
+.icon {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+i#icon {
+  font-size: 8rem;
+  margin-top: 40px;
+  color: rgb(231, 231, 47);
+}
+
+#temp {
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+}
+#temp h1 {
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+#temp p {
+  margin-top: 0;
+  padding-right: 50px;
+  font-size: large;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.details h4 {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+.details p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.details i {
+  font-size: x-large;
+}

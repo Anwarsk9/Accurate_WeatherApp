@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="title">Accurate Weather App</h1>
+        <form class="search">
+          <label for="search">Enter Location: </label>
+          <input type="text" id="search" />
+          <button id="submit">Search</button>
+        </form>
+        <div class="fa-main">
+          <div class="timer">
+            <h2>Berlin</h2>
+            <p>Today sept 9 10:00AM</p>
+          </div>
+          <div class="icon">
+            <i id="icon" class="fa-solid fa-cloud-showers-heavy"></i>
+          </div>
+          <div id="temp">
+            <h1>18&deg;</h1>
+            <p>Rainy</p>
+          </div>
+          <div class="details">
+            <div class="humidity">
+              <div class="icon">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <div class="info">
+                <h4>90&percnt;</h4>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="wind">
+              <div class="icon">
+                <i class="fa-solid fa-wind"></i>
+              </div>
+              <div class="info">
+                <h4>2.68 km/h</h4>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
