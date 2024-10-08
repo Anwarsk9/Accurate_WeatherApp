@@ -9,12 +9,12 @@ form.addEventListener("submit", async (event) => {
   city = data.value;
   if (city.length >= 3 && city !== "") {
     try {
-      let res = await axios.get(`/weather?city=${city}`);
+      let res = await fetch(`/weather?city=${city}`);
+      res = await res.json();
       if (res.cod == "500") {
         console.log("City not found:", res.message); // Error case
         alert("Error: " + res.message); // Show an alert to the user
       } else {
-        res = res.data;
         let mainEl = document.querySelector(".fa-main");
         let description = document.querySelector("#temp p");
         let tempEl = document.querySelector("#temp h1");
